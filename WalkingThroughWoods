@@ -1,0 +1,51 @@
+#FIRST ITERATION OF STUPID DECISION GAME
+
+#first decision using while loop
+
+print("Hi there, would like to take a walk through the woods?: (y/n)")
+decision1 =input()
+
+if decision1 == "y":
+    print ('Alright! follow meeeee!')
+elif decision1 == "n":
+    print('Why, that is too bad!')
+    x = 0
+    while x <3: 
+        print("please can we go? can we? please? Please?")
+        x = x+1
+        #ask again
+        decision = input()
+
+else: 
+    print("Please enter (y/n)")
+    
+print("I knew you'd come around!")
+
+#second decision using for loop
+
+print("Do you wanna go left or right?: (l/r)")
+decision2=input()
+
+if decision2 == "l":
+    print ('Oh okay, I thought I heard something in the woods around this path earlier today... it might not be safe to go down that road... but I guess theres no turning back now!')
+    pthway = "l"
+elif decision2 == "r":
+    print('Yay! I love this path, the trees are very pretty at this time of the year')
+    x = 0
+    pthway = "r"
+else:
+    print("Please enter (y/n)")
+
+#Greg is bored walking through the woods
+
+for i in range(10) :
+    print(i+1)
+    
+print('Counting to ten always makes time go by quickly for me... want me to do it again?: (y/n)')
+decision3 = input()
+if decision3 =="y":
+    for i in range(10) :
+        print(i+1)
+    print('hmm still feels like this is taking forever')
+elif decision3 =="n":
+    print("welllllll you're just no fun are you!")
